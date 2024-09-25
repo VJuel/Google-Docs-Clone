@@ -3,10 +3,9 @@
 export default defineNuxtConfig({
   ssr: true,
   target: "static", // Cela configure Nuxt.js pour générer un site statique
-  router: {
-    base: "Google-Docs-Clone", // Ajoutez le chemin de base si votre projet n'est pas sur la racine du domaine GitHub Pages
-  },
+
   app: {
+    base: "/Google-Docs-Clone/", // Ajoutez le chemin de base si votre projet n'est pas sur la racine du domaine GitHub Pages
     pageTransition: { name: "page", mode: "out-in" },
   },
   $production: {
